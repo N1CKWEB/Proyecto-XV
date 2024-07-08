@@ -1,0 +1,44 @@
+/* Estilos para el contenedor del mapa */
+.map-container {
+    text-align: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el título */
+.map-container h2 {
+    background-color: #dad2d2; /* Fondo gris claro */
+    color: #333; /* Color de texto oscuro */
+    padding: 15px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-size: 1.8rem; /* Tamaño de letra más grande */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilos para el iframe del mapa (responsive) */
+.map-container iframe {
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 600px; /* Ancho máximo para pantallas grandes */
+    height: 350px; /* Altura fija (puedes ajustarla) */
+    border: none; /* Quita el borde */
+}
+h2{
+    font-weight: bold;
+
+}
+.logo-mapa { /* Reemplaza '.logo-mapa' con la clase o ID de tu logo */
+    width: 1.2em; /* Ajusta el tamaño según el tamaño de tus letras */
+    height: 1.2em;
+    border-radius: 50%; /* Crea un círculo */
+    border: 2px solid red; /* Borde rojo (puedes cambiarlo a negro) */
+    margin-left: 10px; /* Espacio entre el texto y el logo */
+    vertical-align: middle; /* Alinea verticalmente el logo con el texto */
+}
+
+/* Responsive design (opcional) */
+@media (max-width: 768px) { /* Ajusta el ancho según tus necesidades */
+    .logo-mapa {
+        width: 1em; 
+        height: 1em;
+    }
+}

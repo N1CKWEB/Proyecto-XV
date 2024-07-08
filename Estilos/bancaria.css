@@ -1,0 +1,85 @@
+.div-general-mp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #bebfcb;
+    font-weight: bold;
+    border-radius: 2rem;
+  }
+  h2{
+    position: relative;
+    bottom: 60px;
+  }
+  #img-mp{
+    width: 130px;
+    height: 130px;
+    position: relative;
+    top: 58px;
+  
+  }
+  #mp{
+    color: blue;
+  }
+/* Estilos generales */
+.div-secundario-mp {
+    display: flex;
+    flex-direction: column; /* Alinea elementos verticalmente */
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+.div-general-alias-y-cvu {
+    background-color: #f0f0f0; /* Fondo gris claro más suave */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.div-alias-y-cvu {
+    background-color: #009EE3;
+    padding: 30px; /* Más espacio interno para resaltar */
+    border-radius: 10px;
+    width: 100%; /* Ancho completo del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+h3 {
+    color: white; /* Texto blanco para contraste */
+    font-size: 1.2rem; /* Tamaño de letra más grande */
+    margin: 10px 0; /* Espacio entre los elementos h3 */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) { 
+    .div-general-alias-y-cvu {
+        width: 90%; /* Ajusta el ancho en pantallas pequeñas */
+    }
+
+    h3 {
+        font-size: 1rem; /* Reduce el tamaño de letra en pantallas pequeñas */
+    }
+}
+
+/* ... (estilos anteriores) ... */
+
+.mercado-pago-button {
+    display: block; /* Para que ocupe todo el ancho disponible */
+    background-color: #009EE3; /* Color de fondo azul de Mercado Pago */
+    color: white; /* Color de texto blanco */
+    padding: 15px 25px; /* Espacio interno */
+    text-align: center; /* Centra el texto */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.1rem; /* Tamaño de letra */
+    margin-top: 20px; /* Espacio superior */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.mercado-pago-button:hover {
+    background-color: #0077B5; /* Color de fondo más oscuro al pasar el mouse */
+}
