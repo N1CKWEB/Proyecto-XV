@@ -7,7 +7,9 @@
    <link rel="stylesheet" href="style.css">
    <script src="script.js"></script>
 </head>
-<body>
+<body onclick="PlayAudio()">
+
+   
 
     <!-- Header -->
      <div id="head-P" class="header-principal">
@@ -60,7 +62,7 @@
 
       <div class="texto">
           <h2 id="mi-Frase-1">MI <span class="resaltado">GRAN</span> XV</h2>
-          <h3 id="mi-Frase-2">ES EL DÍA <span class="resaltado">SÁBADO</span> 03 DE AGOSTO A LAS <span class="resaltado">21HS</span></h3>
+          <h3 id="mi-Frase-2"> ES EL DÍA  <span class="resaltado">  SÁBADO </span> 03 DE AGOSTO A LAS <span class="resaltado">21HS</span></h3>
           <h3 id="mi-Frase-3">EN EL <span class="resaltado">SALÓN</span></h3>
           <h2 id="mi-Frase-4" >"LA MAGNOLIA"</h2>
           <img id="imagen-1" src="mapa.png" alt="">
@@ -94,5 +96,20 @@
          <hr>
          <h2 id="footer-info-2">Realizado por <a href="https://www.linkedin.com/in/nicol%C3%A1s-d%C3%ADaz-09aa02208/" id="autor">Nicolás Díaz</a> </h2>
       </div>
-</body>
+
+
+      <audio id="audio1" class="audio_class" autoplay loop>
+         <source src="Coldplay - Viva La Vida (Official Video) (192).mp3" type="audio/mpeg">
+
+     </audio>
+
+     <script>
+      function PlayAudio() {
+         document.getElementById("audio1").play();
+      }
+     </script> 
+
+   </body>
+
+
 </html>

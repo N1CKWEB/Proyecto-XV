@@ -32,6 +32,4 @@ if (seccionDetener) {
 
   observer.observe(seccionDetener);
 }
-const url = require('url');
-const unicodeDomain = 'café.example.com';
-const asciiDomain = url.domainToASCII(unicodeDomain); // 'xn--caf-dma.example.com'
+
