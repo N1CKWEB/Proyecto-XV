@@ -8,7 +8,7 @@
 }
 
 .header-principal {
-  background-color: #fff;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@
   border: 2px solid  rgb(193, 58, 130);;
   font-size:larger;
   padding: 20px;
-  color: #fff;
+  color: #ffffff;
   border-radius: 1rem;
   margin-bottom: 10px;
 }
@@ -27,7 +27,7 @@
 }
 
 .header-principal h2 a {
-  color: #fff;
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -74,12 +74,14 @@
 .rosa {
   width: 30px;
   height: 30px;
-  background-image: url("img.png");
+  background-image: url("img.png"); /* Ruta de la imagen de rosa */
   background-size: cover;
   position: absolute;
-  animation: caida 5s linear infinite; /* Caída infinita */
-  animation-delay: calc(var(--delay) * 1s); /* Retraso aleatorio para cada rosa */
+  animation: caida 5s linear infinite;
+  animation-delay: calc(var(--delay) * 1s);
 }
+
+
 
 @keyframes caida {
   0% {
@@ -360,4 +362,16 @@ font-weight: bold;
   width: 100%;
   height: 100%;
   max-width: 1000px;
+}
+
+#img-salon{
+  width: 140px;
+  height: 140px;
+}
+
+#fotoDeQuinceañera{
+  
+  width: 170px;
+  height: 170px;
+  border-radius: 2rem;
 }
