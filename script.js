@@ -1,29 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const container = document.querySelector('.container');
-  const numRosas = 5000;
-  const imageSrc = 'rosa.png'; 
+  var video = document.getElementById('video-principal');
+  video.play();
+});
 
-  const img = new Image();
-  img.src = imageSrc;
+window.addEventListener('load', function() {
+  const numPetals = 100;
+  const container = document.querySelector('.informacion-en-general');
 
-  img.onload = function() {
-    for (let i = 0; i < numRosas; i++) {
-      const rosa = document.createElement('div');
-      rosa.classList.add('rosa');
-
-      rosa.style.left = `${Math.random() * window.innerWidth}px`;
-      rosa.style.top = `${Math.random() * -window.innerHeight}px`;
-
-      const delay = Math.random() * 5;
-      rosa.style.animationDelay = `${delay}s`;
-
-      container.appendChild(rosa);
-    }
-  };
-
-  img.onerror = function() {
-    console.error('Error al cargar la imagen de la rosa.');
-  };
+  for (let i = 0; i < numPetals; i++) {
+    const petal = document.createElement('div');
+    petal.classList.add('rosa');
+    petal.style.setProperty('--left-pos', `${Math.random() * 100}%`);
+    petal.style.setProperty('--rotate', Math.random() * 360);
+    petal.style.setProperty('--delay', Math.random() * 5); // Retraso aleatorio entre 0 y 5 segundos
+    container.appendChild(petal);
+  }
 });
   const miVideo = document.getElementById('imagen-2');
 
