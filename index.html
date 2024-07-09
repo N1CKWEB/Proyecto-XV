@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MIS XV JULI</title>
+    <title>MIS 15 JULI</title>
    <link rel="stylesheet" href="style.css">
    <link rel="icon" href="LogoJuli.svg" sizes="16x16">
 
    <script src="script.js"></script>
    
 </head>
-<body onclick="PlayAudio()">
+<body onclick="PlayAudio() , PlayVideo()"  >
 
    
 
@@ -22,14 +22,13 @@
            <img src="/Imagenes y Videos/" alt="">
         </div> -->
 
-           <h2 id="inicio"><a href="index.html">Inicio</a>  </h2>
-           <h2 id="ubicacion"><a href="ubicacion.html">Ubicación</a></h2>
-           <h2 id="bancarios"><a href="bancaria.html">Datos Bancarios</a></h2>
+           <h2 id="inicio"><a href="index.html" style="color: rgb(193, 58, 130);">Inicio</a>  </h2>
+           <h2 id="ubicacion"><a href="ubicacion.html" style="color: rgb(193, 58, 130);">Ubicación</a></h2>
      </div>
 
      <div id="info-P" class="informacion-principal">
 
-      <video id="video-principal" src="julieta m.mp4"   type="video/mp4" muted></video>
+      <video id="video-principal" src="julieta m (1).mp4"   type="video/mp4" autoplay muted></video>
        
       <!-- Información -->
 
@@ -81,12 +80,12 @@
              <span class="cuadro-rojo"></span> 
              Agradeceríamos que confirmara su asistencia antes del 31 de Julio.
          </p>
-         <a href="https://wa.me/+5492616243009"><img id="imagen-3" src="social.png" alt="WhatsApp"> </a>
+         <a href="https://wa.me/+5492616243009"><img id="imagen-3" src="whatsapp rojo.jpeg" alt="WhatsApp"> </a>
      </div>
      
       
      <div class="div-info-03">
-      <p id="confirmacion-2">Que vengas es el mejor regalo, pero si querés, podés ayudarme a ahorrar.</p>
+      <p id="confirmacion-2"></p>
       <button><a href="bancaria.html">Cuenta Bancaria</a></button>
      </div>
      
@@ -95,14 +94,14 @@
      <!--Footer  -->
        <div class="footer-principal">
  
-         <h2 id="footer-info-1">DERECHO RESERVADOS POR EL AUTOR</h2>
+         <h2 id="footer-info-1" style="color: black;">DERECHO RESERVADOS POR EL AUTOR</h2>
          <hr>
          <h2 id="footer-info-2">Realizado por <a href="https://www.linkedin.com/in/nicol%C3%A1s-d%C3%ADaz-09aa02208/" id="autor">Nicolás Díaz</a> </h2>
       </div>
 
 
       <audio id="audio1" class="audio_class" autoplay loop>
-         <source src="Coldplay - Viva La Vida (Official Video) (192).mp3" type="audio/mpeg">
+         <source id="video1" src="Coldplay - Viva La Vida (Official Video) (192).mp3" type="audio/mpeg">
 
      </audio>
 
@@ -111,6 +110,12 @@
          document.getElementById("audio1").play();
       }
      </script> 
+     
+     <script>
+       function PlayVideo(params) {
+         document.getElementById("video1").play();
+       }
+     </script>
 
    </body>
 

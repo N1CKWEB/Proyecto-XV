@@ -8,12 +8,12 @@
 }
 
 .header-principal {
-  background-color: #e74c3c;
+  background-color: #F5F5DC;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:space-between;
-  border: 2px solid black;
+  border: 2px solid  rgb(193, 58, 130);;
   font-size:larger;
   padding: 20px;
   color: #fff;
@@ -194,7 +194,7 @@
 
 /* Footer */
 .footer-principal {
-    background-color: #e74c3c;
+    background-color: #F5F5DC;
     display: flex;
     flex-direction: column; /* Apila los elementos en vertical para móviles */
     align-items: center;
